@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="WpfCours.MVVM.View.TabPage1View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfCours.MVVM.View"
+             xmlns:VM="clr-namespace:WpfCours.MVVM.ViewModel"
+             d:DataContext="{d:DesignInstance Type=VM:MainViewVM}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+            <Border Background="Blue" BorderThickness="3" CornerRadius="4"/>
+        <StackPanel VerticalAlignment="Center">
+
+            <TextBlock Text=";( Your computer has crashed" Foreground="White" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Command="{Binding RequestChangeViewCommand}" Content="Go To GameView" Width="200" FontSize="20" Margin="30"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
