@@ -10,6 +10,7 @@
         Title="MainWindow" Height="450" Width="800">
 
     <Window.Resources>
+        <!-- Link VM & View  -->
         <DataTemplate DataType="{x:Type VM:MainViewVM}">
             <View:MainWindow/>
         </DataTemplate>
@@ -20,6 +21,7 @@
     </Window.Resources>
     
     <Grid>
+        <!-- Bind UserControl to the var from MainViewVM -->
         <ContentControl Content="{Binding CurrentVM}"/>
     </Grid>
 </Window>

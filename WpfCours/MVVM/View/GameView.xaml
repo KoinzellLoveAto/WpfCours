@@ -8,6 +8,15 @@
              d:DataContext="{d:DesignInstance Type=VM:MainViewVM}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
+    <!--
+       Create allias from  NameSpace
+      xmlns:VM="clr-namespace:WpfCours.MVVM.ViewModel"
+    
+      Define datacontext with the linked VM
+      d:DataContext="{d:DesignInstance Type=VM:MainViewVM}"
+    -->
+    
     <Grid>
         <Border Background="Aqua">
             <StackPanel VerticalAlignment="Center">

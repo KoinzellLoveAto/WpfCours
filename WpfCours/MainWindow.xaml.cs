@@ -21,7 +21,12 @@ namespace WpfCours
         public MainWindow()
         {
             InitializeComponent();
+            
+            //create mainwindow view model
             mainWindowVM = new MainWindowVM();
+
+            //Assign VM to datacontext
+            //=> View can acces to variables to VM;
             DataContext = mainWindowVM;
         }
 
